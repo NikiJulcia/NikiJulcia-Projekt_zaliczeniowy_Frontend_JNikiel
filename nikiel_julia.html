@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Vincent van Gogh</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Julia Nikiel">
+    <meta name="description" content="strona o Van Goghu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- odwołanie do arkusza stylów -->
+    <link rel="stylesheet" media="screen" href="Styles/styles.css" />
+    <link rel="stylesheet" media="screen" href="Styles/styl_menu_gorne.css" />
+    <link rel="stylesheet" media="screen" href="Styles/all.css" />
+    <!-- link do obrazka na ikonkę strony -->
+    <link rel="shortcut icon" href="Images/obraz1.icon" />
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script>
+        $(document).ready(function () {
+            $("a").on('click', () => {
+                $('html').css({
+                    "scroll-behavior": "smooth"
+                });
+            });
+        });
+        // chowanie menu 
+        $(document).ready(function() {
+                $(window).resize(function() {
+                    if ($(this).width() <= 600) {
+                        $('.side-menu-container').hide();
+                        $('.menu-glowne').show();
+                    } else {
+                        $('.side-menu-container').show();
+                    }
+                });
+            });
+    </script>
+</head>
+
+<body style="margin: 0px">
+    <div class="side-menu-container">
+        <nav class="side-menu">
+            <a id="toSec1" href="#sekcja1">
+                <div><i class="fas fa-1"></i></div>
+            </a>
+            <a id="toSec2" href="#sekcja2">
+                <div><i class="fas fa-2"></i></div>
+            </a>
+            <a id="toSec3" href="#sekcja3">
+                <div><i class="fas fa-3"></i></div>
+            </a>
+            <a id="toSec4" href="#sekcja4">
+                <div><i class="fas fa-4"></i></div>
+            </a>
+        </nav>
+    </div>
+    <!-- ......................................................................... -->
+    <header>
+        <div class=logo>
+            <p>Vincet Van Gogh</p>
+            <img src="Images/log.png" alt="alternative" />
+        </div>
+        <div class="menu">
+            <nav class="menu-gorne">
+                <a href=#sekcja1><i class="fa-solid fa-1"></i><span class=tekst>Życiorys</span></a>
+                <a href=#sekcja2><i class="fa-solid fa-2"></i><span class=tekst>Dzieciństwo, młodość i
+                        powołanie</span></a>
+                <a href=#sekcja3><i class="fa-solid fa-3"></i><span class=tekst>Pośmiertna sława</span></a>
+                <a href=#sekcja4><i class="fa-solid fa-4"></i><span class=tekst>Twórczość</span></a>
+            </nav>
+        </div>
+    </header>
+    <!-- ......................................................................... -->
+    <img class="landing" alt="landing_obraz"
+        src="https://ocdn.eu/pulscms-transforms/1/3eGk9kpTURBXy9lYWZmZDkyZmRiYzNkODA5ODI3Nzg1YWJkYmFhY2FjZi5wbmeTlQMAAM0HgM0EOJMFzQMUzQG8kwmmNzY5NzZlBoGhMAU/vincent-van-gogh-w-wyobrazeniu-tworcow-filmu-twoj-vincent-rez-dorota-kobiela-i-hugh-welchman-2017.webp">
+    <!-- ......................................................................... -->
+    
+    <div class="container-main container"></div>
+    <div class="container" id="sekcja1">
+        <h1> Życiorys </h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat sollicitudin turpis, vel
+            ultricies eros mattis non. Nunc euismod nec diam vel tristique. Duis eleifend elementum nulla, non
+            vulputate nunc sodales congue.
+            <br />
+            Nam commodo bibendum nisi sed tincidunt. Pellentesque quis felis quis lectus porta venenatis at et
+            libero. Fusce pellentesque nec tortor nec ultricies. Sed id dolor efficitur, vulputate massa dignissim,
+            auctor sem.
+        </p>
+        <div class="container-picture">
+            <div>
+                <img class="obrazki"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/VanGogh_1887_Selbstbildnis.jpg/1280px-VanGogh_1887_Selbstbildnis.jpg"
+                    alt="The Starry Night">
+                <div class="pod_obrazkiem">
+                    <a
+                        href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/VanGogh_1887_Selbstbildnis.jpg/1280px-VanGogh_1887_Selbstbildnis.jpg">
+                        Autoportret (1887) </a>
+                </div>
+            </div>
+        </div>
+        <h2> Listy </h2>
+        <p>
+            Aliquam sit amet leo nunc. Duis facilisis, enim vitae tempor vestibulum, tellus leo auctor neque, quis
+            luctus leo augue et orci. Quisque in arcu varius, consequat turpis sit amet, vestibulum nibh. Ut auctor
+            convallis lorem vitae viverra. Nulla maximus, erat et faucibus pretium, urna eros iaculis neque, id
+            posuere eros odio a justo. Suspendisse mattis libero orci, ut pellentesque metus luctus a. Praesent id
+            orci eget erat auctor ultrices. Phasellus non libero tincidunt, tempus nibh ut, tincidunt turpis. In
+            mauris velit, ultrices eu vestibulum et, interdum et nulla.
+        </p>
+    </div>
+    <!-- ......................................................................... -->
+    <hr />
+    <div class="container" id="sekcja2">
+        <h1> Dzieciństwo, młodość i powołanie </h1>
+        <p>
+            Suspendisse mattis libero orci, ut pellentesque metus luctus a. Praesent id orci eget erat auctor
+            ultrices. Phasellus non libero tincidunt, tempus nibh ut, tincidunt turpis. In mauris velit, ultrices eu
+            vestibulum et, interdum et nulla.
+        </p>
+        <p>
+            Nullam quis mattis leo. Vivamus feugiat sagittis varius. In non tempor justo. Quisque accumsan sapien
+            nisl. Proin tempor varius ex, quis efficitur ante aliquam ut. Duis at ultrices ligula. Integer ultrices
+            in dui vitae commodo. Proin quis vehicula mauris. Nulla eros velit, ultricies eu metus eget, varius
+            blandit mi. Vivamus faucibus nulla dolor. Pellentesque ac metus viverra, convallis dolor quis,
+            vestibulum neque.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur placeat, eos fugiat assumenda
+            quae corporis rem distinctio ipsum, accusamus dicta obcaecati cumque ratione harum saepe deserunt nulla
+            nisi laborum modi consequuntur sapiente odit perferendis. Ex asperiores quod autem labore.
+        </p>
+    </div>
+    <!-- ......................................................................... -->
+    <hr />
+    <div class="container" id="sekcja3">
+        <h1> Pośmiertna sława </h1>
+        <p>
+            Vestibulum consequat dui nec purus tempor auctor. Mauris tristique nibh nec sapien ullamcorper, a
+            aliquet dolor blandit. In neque nulla, pretium in dolor nec, placerat dictum justo. Class aptent taciti
+            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sit amet lorem libero.
+            Vestibulum bibendum, sem quis imperdiet semper, arcu urna elementum ante, a vehicula urna elit ac
+            lectus.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quos neque minus soluta delectus.
+            Consectetur aspernatur animi iste assumenda quam quas. Numquam, iste et sit excepturi explicabo omnis,
+            nulla pariatur magni illo, soluta corporis. <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dignissimos itaque eius 
+            consequatur laborum voluptates vel porro sapiente consequuntur. Aut officia dolores nesciunt.<br>
+        </p>
+    </div>
+    <!-- ......................................................................... -->
+    <hr />
+    <div class="container" id="sekcja4">
+        <h1> Twórczość </h1>
+        <p>
+            Sed mattis porttitor suscipit. In auctor pellentesque facilisis. Curabitur nec turpis
+            tortor. Quisque elementum interdum velit, in hendrerit augue imperdiet mollis. Duis vel turpis sit amet
+            nibh lacinia lobortis at commodo mi. Mauris tincidunt viverra orci, a consequat nisl dapibus eu. <br />
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit rem culpa omnis animi maxime facere nemo
+            modi suscipit vero, dolore sed. Nisi porro officia ut. Nihil minima facere rem quod consequuntur soluta
+            fugiat accusamus veniam rerum consequatur, eligendi animi. Voluptatem non esse ipsum sapiente!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nostrum a debitis saepe dolore quas eos
+            magni iure.
+            Vero labore ullam impedit voluptas quod ex nam perspiciatis tempora cumque magni? <span
+                style="font-weight: bold;"> Quis alias provident</span> consectetur,
+            cum sapiente possimus modi, et odit ut quo earum aliquam eaque ad a enim sit beatae fugiat perspiciatis,
+            illum quibusdam? Vero eveniet consequatur quia similique ducimus nam eligendi sit doloribus aut autem itaque
+            eos ipsam temporibus placeat quam eaque sed dicta, fugit commodi praesentium harum tempore facere veniam.
+            Nam nihil earum perspiciatis. Minima, reiciendis? Sint.
+        </p>
+        <!-- listy -->
+        <div class="listy">
+            <div id="l1">
+                <h3> Van Gogh malował: </h3>
+                <ul>
+                    <li> Pejzaże </li>
+                    <li> Martwą naturę </li>
+                    <li> Portrety </li>
+                </ul>
+            </div>
+            <div id="l2">
+                <h3> Jego najpopularniejsze dzieła to: </h3>
+                <ol>
+                    <li>Gwiaździsta noc (1889)</li>
+                    <li>Gwiaździsta noc nad Rodanem (1888)</li>
+                    <li>Słoneczniki (1888)</li>
+                    <li>Autoportret (1889)</li>
+                </ol>
+            </div>
+        </div>
+        <div class="image_container_slider">
+            <div class="przycisk"><i class="fa-solid fa-circle-right" id="nastepny" onclick="next()"></i></div>
+            <div class="przycisk"><i class="fa-solid fa-circle-left" id="poprzedni" onclick="prev()"></i></div>
+            <div class="image_slide">
+              <img src="obrazek4.jpeg" alt="kopia ob4"
+              id="ostatni">
+              <img src="obrazek1.jpg" alt="obraz1">
+              <img src="obrazek2.jpg" alt="obraz2">
+              <img src="obrazek3.jpg" alt="obraz3">
+              <img src="obrazek4.jpeg" alt="obraz4">
+              <img src="obrazek1.jpg" alt="kopia ob1"
+              id="pierwszy">
+            </div>
+          </div>
+        <!-- tabelka -->
+        <h2> Autoportrety </h2>
+        <p>
+            Sed mattis porttitor suscipit. In auctor pellentesque facilisis. Curabitur nec turpis
+            tortor. Quisque elementum interdum velit, in hendrerit augue imperdiet mollis. Duis vel turpis sit amet
+            nibh lacinia lobortis at commodo mi. Mauris tincidunt viverra orci, a consequat nisl dapibus eu. <br />
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <td>1886</td>
+                    <td>1888</td>
+                    <td>1888</td>
+                    <td>1889</td>
+                    <td>1889</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img class="obrazki"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Van_Gogh_-_Selbstbildnis_mit_dunklem_Filzhut.jpeg/1280px-Van_Gogh_-_Selbstbildnis_mit_dunklem_Filzhut.jpeg"
+                            alt="portret1">
+                    </td>
+                    <td>
+                        <img class="obrazki"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Van_Gogh_-_Selbstbildnis_vor_der_Staffelei.jpeg/1280px-Van_Gogh_-_Selbstbildnis_vor_der_Staffelei.jpeg"
+                            alt="portret2">
+                    </td>
+                    <td><img class="obrazki"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Van_Gogh_self-portrait_dedicated_to_Gauguin.jpg/1280px-Van_Gogh_self-portrait_dedicated_to_Gauguin.jpg"
+                            alt="portret3">
+                    </td>
+                    <td>
+                        <img class="obrazki"
+                            src="https://upload.wikimedia.org/wikipedia/commons/7/71/Vincent_Willem_van_Gogh_102.jpg"
+                            alt="portret4">
+                    </td>
+                    <td>
+                        <img class="obrazki"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Self-Portrait_%28Van_Gogh_September_1889%29.jpg/1280px-Self-Portrait_%28Van_Gogh_September_1889%29.jpg"
+                            alt="portret5">
+                    </td>
+                </tr>
+                <tr>
+                    <td> Autoportret<br> w ciemnym pilśniowym kapeluszu </td>
+                    <td> Autoportret przed sztalugą </td>
+                    <td> Autoportret (dedykowany Paulowi Gauguinowi) </td>
+                    <td> tzw. Autoportret<br> bez brody </td>
+                    <td> Autoportret </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <!-- ......................................................................... -->
+    <footer>
+        <div>Julia Nikiel, 2022 &copy; </div>
+        <div id="zegar">a</div>
+    </footer>
+    <!-- ......................................................................... -->
+    <script>
+    // ZEGAR 
+        function getTime() {
+    return (new Date()).toLocaleTimeString();
+  }
+  document.getElementById('zegar').innerHTML = getTime();
+  setInterval(function () {
+    document.getElementById('zegar').innerHTML = getTime();
+  }, 1000);
+
+  // SLIDER
+  const slide = document.querySelector(".image_slide");
+    const images = document.querySelectorAll(".image_slide img");
+    // buttons
+    const poprzednibtn = document.querySelector("#poprzedni");
+    const nastepnybtn = document.querySelector("#nastepny");
+
+    let licznik = 1;
+    const rozmiar = images[1].clientWidth;
+
+    slide.style.transform = "translateX(" + (-rozmiar * licznik) + "px)"; // przesuniecie o jeden obrazek 
+
+    function next() {
+      if (licznik >= images.length - 1) {
+        return
+      }
+      slide.style.transition = "transform 0.75s ease-in-out";
+      licznik++;
+      slide.style.transform = 'translateX(' + (-rozmiar * licznik) + 'px)';
+    }
+    function prev() {
+      if (licznik <= 0) {
+        return
+      }
+      slide.style.transition = "transform 0.75s ease-in-out";
+      licznik--;
+      slide.style.transform = 'translateX(' + (-rozmiar * licznik) + 'px)';
+    }
+
+    slide.addEventListener('transitionend', () => {
+      if (images[licznik].id === 'ostatni') {
+        slide.style.transition = "none";
+        licznik = images.length - 2;
+        slide.style.transform = 'translateX(' + (-rozmiar * licznik) + 'px)';
+      }
+      if (images[licznik].id === 'pierwszy') {
+        slide.style.transition = "none";
+        licznik = images.length - licznik;
+        slide.style.transform = 'translateX(' + (-rozmiar * licznik) + 'px)';
+      }
+    })
+    </script>
+</body>
+
+</html>
+
+<!-- formatowanie Shift + Alt + f -->
