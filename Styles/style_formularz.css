@@ -1,0 +1,68 @@
+body{
+    color: black;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    background-color: #17292f;
+    border-radius: 5px;
+    color: ghostwhite;
+}
+
+html{
+    background-color: #325b5f;
+    width: 500px;
+}
+
+fieldset{
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    
+}
+
+legend{
+    background-color: #17292f;
+    color: ghostwhite;
+    border-radius: 5px;
+}
+
+.item{
+    background-color:white;
+}
+
+.button:hover{
+background-color: 	#FFD700;
+color: black;
+}
+
+option:hover{
+    background-color: #376f7f;
+}
+
+option:checked{
+    background-color: #e7d8d3;
+}
+
+textarea{
+    resize: none;
+}
+
+.button{
+    background-color: #17292f;
+    color: ghostwhite;
+    width: 220px;
+    height: 45px;
+    font-size: 13px;
+    border-radius: 7px;
+}
+
+.buttons{
+    display: flex;
+    justify-content:space-between;
+}
